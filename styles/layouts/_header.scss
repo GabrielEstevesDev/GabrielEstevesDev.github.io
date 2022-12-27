@@ -1,0 +1,61 @@
+.contact {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  li {
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+header {
+  min-height: 100vh;
+  background: url(../../img/bg.jpg) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .header-container {
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+    #txtAnim {
+      margin: auto auto;
+      color: rgb(228, 226, 226);
+      h2 {
+      }
+      h1 {
+        text-transform: uppercase;
+        padding: 20px;
+      }
+      button {
+        color: rgb(215, 212, 212);
+        cursor: pointer;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        background: rgb(71, 98, 135);
+        border-radius: 10px;
+        transition: 0.4s ease-in-out;
+        border: 3px solid rgb(228, 226, 226);
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    ul {
+      img {
+        height: 32px;
+        width: 32px;
+      }
+    }
+  }
+}
