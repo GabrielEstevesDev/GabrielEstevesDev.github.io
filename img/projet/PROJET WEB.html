@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1/JeuxGeographique/profil/profil.php -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>PROJET WEB</title>
+<link rel="stylesheet" href="./PROJET WEB_files/profil.css">
+<link rel="stylesheet" href="./PROJET WEB_files/nav.css">
+<link rel="stylesheet" href="./PROJET WEB_files/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<script src="./PROJET WEB_files/jquery.min.js.téléchargement" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./PROJET WEB_files/profil.js.téléchargement"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <nav id="navbar">
+                <ul>
+                    <a href="http://127.0.0.1/JeuxGeographique/jouer/index.php"> <li>jouer</li></a>
+                    <a href="http://127.0.0.1/JeuxGeographique/classement/classement.php"><li>classement</li></a>
+                    <a href="http://127.0.0.1/JeuxGeographique/profil/profil.php#"><li>profil</li></a>
+                    <a href="http://127.0.0.1/JeuxGeographique/connexion/php/logout.php"><li>déconnexion</li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <h1 class="Titre">Bienvenue gabriel</h1>
+    <div>
+        <section class="statistiques">
+            <h1 class="Titre">Statistiques</h1>
+            <h3>Meilleur score</h3>
+            <div>8000<div>
+            <h3>Score total</h3>
+            <div>17750<div>
+        </div></div></div></div></section>
+
+        <section>
+            <h1 class="Titre">Changer d'adresse mail</h1>
+            <br>
+            <form action="http://127.0.0.1/JeuxGeographique/profil/php/changeMail.php" method="post">
+                <label for="mail">Email</label><br>
+                <input type="mail" id="mail" name="mail" value="" required=""><br>
+                <label for="emailc">Confirmer l'email</label><br>
+                <input type="mail" id="mailc" name="mailc" value="" required=""><br><br>
+                <input class="BtnInput" type="submit" value="Envoyer" id="submitMail" disabled="true">
+                <div id="msgMailc"></div>
+            </form>
+            <div></div>
+            <br><br>
+        </section>
+
+        <section>
+            <h1 class="Titre">Changer de mot de passe</h1>
+            <br>
+            <form action="http://127.0.0.1/JeuxGeographique/profil/php/changeMdp.php" method="post">
+            <label for="exmdp">Ancien mot de passe</label><br>
+            <input type="password" id="exmdp" name="exmdp" value="" required=""><br>
+            <label for="nmdp">Nouveau mot de passe</label><br>
+            <input type="password" id="nmdp" name="nmdp" value="" required=""><br>
+            <label for="password">Confirmer le nouveau mot de passe</label><br>
+            <input type="password" id="mdpc" name="mdpc" value="" required=""><br><br>
+            <input class="BtnInput" type="submit" value="Envoyer" id="submitMdp" disabled="">
+            <div id="msgMdpc"></div>
+            </form>
+            <div></div>
+            <br><br>
+        </section>
+
+        <section>
+            <h1 class="Titre">Amis</h1>
+            
+            <br><h2>Voici la liste de vos amis :</h2><br><table id="TableAmis"><tbody><tr><th> PSEUDO </th> <th> MAIL </th> <th> SCORE TOTAL </th> <th> MEILLEUR SCORE </th> <th> SUPPRIMER </th></tr><tr class="contact" id="ami2"><td> <div class="td">aaa</div></td><td> <div class="td">aaa@iut.com</div></td><td> <div class="td">465134</div></td><td> <div class="td">55484</div></td><td><div class="supprimer" name="2">Supprimer</div></td></tr><tr class="contact" id="ami3"><td> <div class="td">gabriel</div></td><td> <div class="td">gabriel@iut.com</div></td><td> <div class="td">17750</div></td><td> <div class="td">8000</div></td><td><div class="supprimer" name="3">Supprimer</div></td></tr></tbody></table>            <br>
+            <h1 class="Titre">Demande d'amis</h1><br>
+            <form class="form" id="Demandeamis" action="http://127.0.0.1/JeuxGeographique/profil/php/askFriend.php" method="post">
+                <label for="friend">Ajouter un ami</label><br>
+                <input type="text" id="friend" name="friend" value="">
+                <input class="BtnInput" type="submit" value="Ajouter" id="addFriend">
+                <div></div>
+            </form>
+                    </section>
+    </div>
+
+</body></html>
