@@ -4,7 +4,7 @@ section#mesprojets {
     width: 90%;
     margin: 0 auto;
     @media screen and (max-width: 1000px) {
-      width: 85%;
+      width: 90%;
     }
     .firsttitle {
       padding-top: 50px;
@@ -107,6 +107,10 @@ section#mesprojets {
         .link {
           display: flex;
           justify-content: space-between;
+          @media screen and (max-width: 440px) {
+            display: block;
+            text-align: center;
+          }
           ul {
             padding-top: 5px;
             display: flex;
@@ -138,13 +142,10 @@ section#mesprojets {
               transform: scale(1.05);
             }
             @media screen and (max-width: 1300px) {
-              font-size: 0.9rem;
+              font-size: 1.1rem;
             }
             @media screen and (max-width: 1100px) {
-              font-size: 0.8rem;
-            }
-            @media screen and (max-width: 1000px) {
-              font-size: 1.1rem;
+              font-size: 0.9rem;
             }
           }
         }

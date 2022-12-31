@@ -12,6 +12,10 @@
   img {
     height: 60px;
     width: 60px;
+    @media screen and (max-width: 800px) {
+      height: 45px;
+      width: 45px;
+    }
   }
 }
 header {
@@ -27,13 +31,20 @@ header {
     font-size: 1.4rem;
     font-weight: 700;
     #txtAnim {
+      width: 95%;
       margin: auto auto;
       color: rgb(228, 226, 226);
       h2 {
+        @media screen and (max-width: 700px) {
+          font-size: 1.4rem;
+        }
       }
       h1 {
         text-transform: uppercase;
         padding: 20px;
+        @media screen and (max-width: 700px) {
+          font-size: 1.7rem;
+        }
       }
       button {
         color: rgb(215, 212, 212);

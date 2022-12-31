@@ -35,6 +35,12 @@ li {
   height: 60px;
   width: 60px;
 }
+@media screen and (max-width: 800px) {
+  .contact img {
+    height: 45px;
+    width: 45px;
+  }
+}
 
 header {
   min-height: 100vh;
@@ -51,12 +57,23 @@ header .header-container {
   font-weight: 700;
 }
 header .header-container #txtAnim {
+  width: 95%;
   margin: auto auto;
   color: rgb(228, 226, 226);
+}
+@media screen and (max-width: 700px) {
+  header .header-container #txtAnim h2 {
+    font-size: 1.4rem;
+  }
 }
 header .header-container #txtAnim h1 {
   text-transform: uppercase;
   padding: 20px;
+}
+@media screen and (max-width: 700px) {
+  header .header-container #txtAnim h1 {
+    font-size: 1.7rem;
+  }
 }
 header .header-container #txtAnim button {
   color: rgb(215, 212, 212);
@@ -108,7 +125,7 @@ section#mesprojets .projet-container {
 }
 @media screen and (max-width: 1000px) {
   section#mesprojets .projet-container {
-    width: 85%;
+    width: 90%;
   }
 }
 section#mesprojets .projet-container .firsttitle {
@@ -221,6 +238,12 @@ section#mesprojets .projet-container .projet .bottom .link {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 440px) {
+  section#mesprojets .projet-container .projet .bottom .link {
+    display: block;
+    text-align: center;
+  }
+}
 section#mesprojets .projet-container .projet .bottom .link ul {
   padding-top: 5px;
   display: flex;
@@ -254,16 +277,11 @@ section#mesprojets .projet-container .projet .bottom .link .btnGit:hover {
 }
 @media screen and (max-width: 1300px) {
   section#mesprojets .projet-container .projet .bottom .link .btnGit {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 }
 @media screen and (max-width: 1100px) {
   section#mesprojets .projet-container .projet .bottom .link .btnGit {
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 1000px) {
-  section#mesprojets .projet-container .projet .bottom .link .btnGit {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=index.css.map */
