@@ -110,6 +110,9 @@ section#mesprojets {
           @media screen and (max-width: 440px) {
             display: block;
             text-align: center;
+            ul {
+              justify-content: center;
+            }
           }
           ul {
             padding-top: 5px;

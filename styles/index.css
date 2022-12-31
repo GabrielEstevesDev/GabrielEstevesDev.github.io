@@ -243,6 +243,9 @@ section#mesprojets .projet-container .projet .bottom .link {
     display: block;
     text-align: center;
   }
+  section#mesprojets .projet-container .projet .bottom .link ul {
+    justify-content: center;
+  }
 }
 section#mesprojets .projet-container .projet .bottom .link ul {
   padding-top: 5px;
