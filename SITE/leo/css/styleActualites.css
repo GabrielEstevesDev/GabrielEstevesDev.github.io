@@ -1,0 +1,268 @@
+body{
+    --border : 0.15vw solid lightgray;
+    background-image: url("../img/beauvais.jpg");
+    background-attachment : fixed;
+    background-size: cover;
+    background-position : center;
+    font-size : 1vw;
+}
+
+p {
+    font-family: sans-serif;
+}
+
+.Contenu{
+    width : 95%;
+    margin:0 auto;
+    padding-top : 0.5vw;
+}
+
+#page {
+    width:60%;
+    margin-left: auto;
+    margin-right : auto;
+    background-color : white;
+    border:var(--border);
+    position : relative;
+    height : auto;
+    margin-top : 15%;
+    margin-bottom : 5vw;
+}
+
+.img {
+    width : 100%;
+    height : 100%;
+    overflow : hidden;
+}
+
+.title {
+    text-align: center;
+    font-family: sans-serif;
+    padding-top : 5vh;
+}
+
+.date {
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom : 1.5vw;
+}
+
+#title {
+    position : absolute;
+    text-align: center;
+    font-size : 1.2vw;
+    background-color: white;
+    border: var(--border);
+    padding-left : 5%;
+    padding-right : 5%;
+    white-space : nowrap;
+    transform:translateX(-50%);
+    left : 50%;
+    width : 15%;
+    z-index : 10;
+    box-shadow : 7px 7px 10px -5px rgba(0,0,0,0.7);
+    top : -4vw;
+}
+
+.readMore {
+    padding : 1.5vw 0;
+    font-family: "InterL", sans-serif;
+    letter-spacing: 0.1vw;
+    font-size : 1vw;
+}
+
+.readMore a, a:link, a:visited, a:active, a:hover{
+    color: black;
+}
+
+hr{
+    height : 0.15vw;
+    border : none;
+    background-color : lightgray;
+    width : 100%;
+}
+
+.Parent{
+    width: 95%;
+    height : 100%;
+    overflow:hidden;
+    margin: 0 auto;
+    display : block;
+}
+
+.Parent:hover img{
+    width:100%;-webkit-transform:scale(1.3);transform:scale(1.3);-webkit-transition:1s ease-in-out;transition:1s ease-in-out
+}
+
+#site{
+    position : relative;
+}
+
+button{
+    cursor: pointer;
+    outline: none;
+    margin : 3% auto;
+    padding : 2% 0;
+    text-align: center;
+    display : block;
+    width : 20%;
+    height : 2vw;
+    font-size : 1vw;
+    border : 2px solid black;
+    background-color : white;
+    font-weight : bold;
+    line-height : 0;
+}
+
+button:hover{
+    color :rgb(70, 70, 70);
+    border : var(--border);
+    border-color : rgb(70, 70, 70);
+}
+
+button:active{
+    font-size : 0.9vw;
+    background-color : rgb(245,245,245);
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+@media only screen and (max-width: 720px) {
+    body{
+        font-size : 3vw;
+    }
+
+    #page{
+        width : 90%;
+        margin-top : 30%;
+    }
+
+    #title{
+        width : 50%;
+        font-size : 3vw;
+        top : -10vw;
+    }
+
+    button{
+        font-size: 3vw;
+        width : 40%;
+        margin : 5% auto;
+        height : 5vw;
+    }
+
+    button:active{
+        font-size : 2.7vw;
+    }
+
+    .readMore {
+        font-size : 2vw;
+        height : 1vw;
+        line-height : 1vw;
+    }
+
+    .readMore:active{
+        font-size:1.8vw;
+    }
+
+    button{
+      font-weight : normal;
+      border : 1px solid black;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
+    body{
+        font-size : 1.5vw;
+    }
+
+    #page{
+        width : 70%;
+        margin-top : 20%;
+    }
+
+    #title{
+        width : 25%;
+        font-size : 1.8vw;
+        top : -6vw;
+    }
+
+    button{
+        font-size : 1.5vw;
+        width : 30%;
+        height : 4vw;
+    }
+
+    button:active{
+        font-size : 1.3vw;
+    }
+
+    .readMore {
+        font-size : 1.5vw;
+        height : 1vw;
+        line-height : 1vw;
+    }
+
+    .readMore:active{
+        font-size:1.35vw;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .readMore{
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+    }
+
+    .readMore:hover {
+        font-size: 1.5vw;
+        letter-spacing: 0.3vw;
+    }
+
+    .readMore:active{
+        font-size : 1.35vw;
+    }
+}
+
+@media only screen and (max-width: 1023px){
+    .readMore{
+        border : var(--border);
+        background-color : white;
+        color :rgb(70, 70, 70);
+        width : 30%;
+        text-align : left;
+        cursor: pointer;
+        outline: none;
+        height : 0.1vw;
+        line-height : 0.1vw;
+        border-color : rgb(70, 70, 70);
+        border-radius : 25px;
+    }
+
+    .readMore a{
+        text-align:center;
+        margin : 0 auto;
+        display : block;
+    }
+
+    .readMore:active{
+        background-color : rgb(245,245,245);
+        font-size : 0.9vw;
+    }
+
+    .readMore:hover{
+      background-color : rgb(240,240,240);
+    }
+}
+
+#navbar .menu .left li:nth-child(2) {
+  background: white;
+}
+#navbar .menu .left li:nth-child(2) a {
+  color: black;
+}
